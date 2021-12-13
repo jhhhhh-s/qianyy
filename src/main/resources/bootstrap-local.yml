@@ -1,0 +1,40 @@
+server:
+  port: 8085
+
+spring:
+  cloud:
+    kubernetes:
+      enabled: false
+  datasource:
+    url: jdbc:mysql://127.0.0.1:3306/signature?autoReconnect=true&useUnicode=true&characterEncoding=utf-8&allowMultiQueries=true&useSSL=true&serverTimezone=Asia/Shanghai
+    username: root
+    password: adminzju
+  redis:
+    host: 127.0.0.1
+    password: adminzju
+    database: 2
+    rabbitmq:
+      host: 127.0.0.1
+      username: qyy
+      password: adminzju
+  resources:
+    add-mappings: true
+  jackson:
+    default-property-inclusion: NON_NULL
+    serialization:
+      write-dates-as-timestamps: true
+
+logging:
+  config: ''
+
+api:
+  OrgApiClient:
+    name: dingteam-apps-org
+    url: http://tt.dingteam.com
+  MessageApiClient:
+    name: dingteam-apps-message
+    url: http://tt.dingteam.com
+  TodoTaskApiClient:
+    name: dingteam-apps-message
+    url: http://tt.dingteam.com
+#    url: http://30.40.41.22:9905

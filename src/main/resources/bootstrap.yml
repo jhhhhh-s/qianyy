@@ -1,0 +1,20 @@
+server:
+  port: 8085
+
+spring:
+  application:
+    name: dingteam-apps-demo
+  profiles:
+    active: local
+  cloud:
+    stream:
+      bindings:
+        myInput:
+          #指定输入通道对应的主题名
+          destination: minestream
+        myOutput:
+          destination: minestream
+#mybatis:
+#  configuration:
+#    default-enum-type-handler: org.apache.ibatis.type.EnumOrdinalTypeHandler
+#  mapper-locations: classpath:mapper/*.xml

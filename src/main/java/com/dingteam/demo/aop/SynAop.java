@@ -1,7 +1,5 @@
-package com.dingteam.demo;
+package com.dingteam.demo.aop;
 
-import com.rabbitmq.tools.json.JSONUtil;
-import org.aspectj.lang.JoinPoint;
 import org.aspectj.lang.ProceedingJoinPoint;
 import org.aspectj.lang.annotation.*;
 import org.aspectj.lang.reflect.MethodSignature;

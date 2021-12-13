@@ -1,4 +1,4 @@
-package com.dingteam.demo.CloudStreamMq;
+package com.dingteam.demo.mq;
 
 import org.springframework.cloud.stream.annotation.Input;
 import org.springframework.cloud.stream.annotation.Output;
